@@ -1,4 +1,5 @@
 #Python venv
+data/
 .venv/
 venv/
 __pycache__/

@@ -1,11 +1,11 @@
 # app.py
 import streamlit as st
-from src import notion_rag_backend
+# from src import notion_rag_backend
 
 st.set_page_config(page_title="Notion × LLM", page_icon="🧠", layout="wide")
 
-st.title("🧠 Notion × LLM 助理")
-st.markdown("問我任何與你的 Notion 筆記相關的問題吧！")
+st.title("🧠 RAG")
+st.markdown("問我任何與 Pittsburgh 相關的問題吧！")
 
 # 側邊欄設定
 with st.sidebar:
@@ -13,7 +13,7 @@ with st.sidebar:
     
     # 檢索參數
     st.subheader("檢索設定")
-    top_k = st.slider("檢索數量", 1, 10, 3, help="從知識庫中檢索幾筆相關內容")
+    top_k = st.slider("檢索數量", 1, 10, 3, help="設定從資料庫中檢索幾筆相關內容")
     
     # LLM 參數
     st.subheader("LLM 設定")
